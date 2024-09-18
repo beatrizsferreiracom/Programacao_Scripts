@@ -1,3 +1,3 @@
-# Aulas Programção de Scripts 👩🏻‍💻
+# Aulas Programação de Scripts 👩🏻‍💻
 
-Repositório destinado ao códigos desenvolvidos durante as aulas das linguagens de programação Html e Java Script, na Fatec Taquaritinga, no segundo semestre de 2024.
+Repositório destinado ao códigos desenvolvidos durante as aulas de Programação de Scripts, utilizando as linguagens Html e Java Script, na Fatec Taquaritinga, no segundo semestre de 2024.
