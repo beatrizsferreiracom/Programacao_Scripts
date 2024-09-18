@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+
+    <script type="text/javascript">
+        //nome = promt('Informe seu nome'); Declarando variável automaticamente
+        var nome = prompt('Informe seu nome: '); //Declarabdo variável com var (Para navegadores antigos)
+        let sobrenome = prompt('Informe seu sobrenome: '); //Declarando variável com let (Para navegadores novos)
+        const idade = prompt('Informe sua idade'); // Declarando variável com const (não pode ser modificada depois de declarada)
+        alert('Seu nome é ' + nome + ' ' + sobrenome + ', você tem ' + idade + ' anos'); // Mostrar mensagem de alerta com as variáveis
+
+        let valor_1 = prompt('Informe o primeiro valor: ')
+        let valor_2 = prompt('Informe o segundo valor: ')
+        
+        if (isNaN(valor_1) || isNaN(valor_2)){ //Verificar se a variável não é um número
+            alert('Valor inválido! Não é um número!')
+        }
+        else{
+            valor_1 = parseFloat(valor_1); //Converter string para float
+            valor_2 = parseFloat(valor_2);
+            resultado = valor_1 + valor_2;
+
+        alert('O resultado da soma é ' + resultado)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
