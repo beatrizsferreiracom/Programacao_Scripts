@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        class Contato {
+            constructor(nome, email, celular, endereco){
+                this.nome = nome;
+                this.email = email;
+                this.celular = celular;
+                this.endereco = endereco;
+            }
+        }
+        function listarContatos (lista) {
+            let auxHTML = "";
+            for(let i = 0; i < lista.length; i ++){
+                auxHTML += "<li>"+ 
+                    "Nome: " +lista[i].nome +  
+                    "<br> Email: " +lista[i].email + 
+                    "<br> Celular: " +lista[i].celular +
+                    "<br> Endereço: " +lista[i].endereco + "</li>" + "<br>";
+            }
+            return auxHTML;
+        }
+
+        let contato1= new Contato("Joaquina Silva", "joaquina@gmail.com", "8888888", "Rua das Rosas")
+        let contato2= new Contato("Josué Sousa", "josue@gmail.com", "777777", "Rua dos Cravos")
+
+        let listaContatos = [];
+
+        window.onload = function(){
+            document.getElementById("frmContato").onsubmit = function(evento) {
+                evento.preventDefault();
+                let nome = document.getElementById("nome").value;
+                let email = document.getElementById("email").value;
+                let celular = document.getElementById("celular").value;
+                let endereco = document.getElementById("endereco").value;
+                let novoContato = new Contato(nome, email, celular, endereco);
+                listaContatos.push(novoContato);
+                document.getElementById("lista").innerHTML = listarContatos(listaContatos);
+                document.getElementById("nome").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("celular").value = "";
+                document.getElementById("endereco").value = "";
+            }
+        }
+    </script>
+    <title>Orientação a objetos</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Contatos</h1>
+    </header>
+    <main>
+        <form id="frmContato">
+            <input type="text" id="nome" placeholder="Nome"/>
+            <br /><br />
+            <input type="text" id="email" placeholder="Email"/>
+            <br /><br />
+            <input type="text" id="celular" placeholder="Celular"/>
+            <br /><br />
+            <input type="text" id="endereco" placeholder="Endereço"/>
+            <br /><br />
+            <button>Adicionar</button>
+        </form>
+        <ul id="lista"></ul>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
