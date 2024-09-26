@@ -1,0 +1,20 @@
+body {background: url(bp-heart.jpg) center;}
+header, main, footer {
+    border: 1px solid #ffffff;
+    width: 260px;
+    margin: auto;
+}
+header{
+    margin-top: 250px;
+}
+#btnLogin {
+    font-size: 15px; padding: 5px;
+    cursor: pointer;
+}
+.fundo:hover{
+    background: rgb(255, 220, 236);
+    cursor: pointer;
+}
+.texto{
+    font-size: 20px;
+}
