@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas em JavaScript</title>
+    <link rel="stylesheet" href="Projeto1.css">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.getElementById("btn-pergunta1").onclick = function(event) {
+                event.preventDefault();
+                document.getElementById("tabela").innerHTML += "<tr><th>Quais são as principais características da linguagem JavaScript?</th><th>JavaScript é uma linguagem de programação usada para deixar páginas web interativas. Ela permite modificar HTML e CSS.</th></tr>";
+            }
+
+            document.getElementById("btn-pergunta2").onclick = function(event) {
+                event.preventDefault();
+                document.getElementById("tabela").innerHTML += "<tr><th>Quais são as principais características de eventos na linguagem JavaScript?</th><th>Eventos em JavaScript são ações no navegador, como cliques ou teclas pressionadas. Eles podem ser controlados com funções chamadas event listeners, permitindo interações dinâmicas com o usuário.</th></tr>";
+            }
+            document.getElementById("btn-limpar").onclick = function () {
+                document.getElementById("tabela").innerHTML = `<tr><th class="titulo">PERGUNTA</th><th class="titulo">RESPOSTA</th></tr>`;
+        }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <section class="card-login">
+            <h1>Perguntas sobre JavaScript</h1>
+            <h2>Clique em uma Pergunta</h2>
+
+            <form id="frmPerguntas">
+                <button id="btn-pergunta1">Quais são as principais características da linguagem JavaScript?</button>
+                <button id="btn-pergunta2">Quais são as principais características de eventos na linguagem JavaScript?</button>
+            </form>
+            <button id="btn-limpar">Limpar</button>
+        </section>
+        <br><br>
+        <table id="tabela">
+            <tr>
+                <th class="titulo">PERGUNTA</th>
+                <th class="titulo">RESPOSTA</th>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

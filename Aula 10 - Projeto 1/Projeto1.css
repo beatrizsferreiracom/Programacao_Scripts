@@ -1,0 +1,125 @@
+body {
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    margin: auto;
+    width: 500px;
+    background-color: rgb(255, 205, 113);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#btn-pergunta1 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: rgb(34, 16, 0);
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    font-family: cambria;
+    font-weight: normal;
+}
+
+#btn-pergunta1:hover {
+    cursor: pointer;
+    background-color: rgb(250, 184, 62);
+}
+
+#btn-pergunta2 {
+    width: 100%;
+    height: 60px;
+    border: none;
+    color: rgb(34, 16, 0);
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    font-family: cambria;
+    font-weight: normal;
+}
+
+#btn-pergunta2:hover {
+    cursor: pointer;
+    background-color: rgb(250, 184, 62);
+}
+
+#btn-limpar {
+    width: 30%;
+    height: 20px;
+    border: none;
+    color: rgb(34, 16, 0);
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family: cambria;
+    font-weight: bolder;
+}
+
+#btn-limpar:hover {
+    cursor: pointer;
+    background-color: rgb(250, 184, 62);
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    background-color: rgb(255, 228, 179);
+    border: 1px solid rgb(34, 16, 0);
+    font-family: cambria;
+    font-weight: normal;
+}
+
+.titulo {
+    padding: 10px;
+    background-color: rgb(255, 205, 113);
+    border: 1px solid rgb(34, 16, 0);
+    font-family: cambria;
+    font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase; 
+    font-family: cambria; 
+    text-align: center; 
+    color: rgb(34, 16, 0); 
+    font-size: 30px; 
+    font-weight: 800;
+    margin: 10px;
+}
+
+h2 {
+    text-transform: uppercase; 
+    font-family: cambria; 
+    text-align: center; 
+    color: rgb(34, 16, 0); 
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 10px;
+}
